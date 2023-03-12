@@ -786,7 +786,7 @@ local function print_list(cb)
     vim.api.nvim_buf_set_option(buffer, "bufhidden", "wipe")
     vim.api.nvim_buf_set_option(buffer, "modifiable", false)
 
-    vim.cmd("sp")
+    vim.cmd("vsp")
     vim.api.nvim_win_set_buf(0, buffer)
 
     if cb then
